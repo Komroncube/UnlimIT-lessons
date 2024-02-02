@@ -20,3 +20,17 @@
         <p>Matn emas</p>
     }
 }
+
+<ng-container 
+    *ngFor="let item of [].constructor(5); let i = index; 
+    odd as isOdd
+    even as isEven
+    first as isFirst
+    last as isLast">
+    <p [ngStyle]="{
+        color:isEven ?'red':'blue',
+        background: isFirst ? 'yellow':''
+    }"> 
+        Angular {{i+1}}
+    </p>
+</ng-container>
