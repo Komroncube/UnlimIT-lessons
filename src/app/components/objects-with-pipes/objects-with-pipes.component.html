@@ -1,0 +1,13 @@
+<label for="name">
+    New hero name:
+</label>
+<input type="text" id="name" [(ngModel)]="value">
+<button type="button" (click)="addHero()">Add hero</button>
+<button type="button" (click)="reset()">Reset</button>
+<!-- @for (item of (heroes|slice:1:5); track item.name) {
+    <div>{{item.name}}</div>
+} -->
+
+@for (item of (heroes| flyingHeroes); track item.name) {
+    <div>{{item.name}}</div>
+}
