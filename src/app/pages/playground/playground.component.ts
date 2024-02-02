@@ -3,13 +3,14 @@ import { ExponentialBoosterPipe } from "../../pipes/exponential-booster.pipe";
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ObjectsWithPipesComponent } from '../../components/objects-with-pipes/objects-with-pipes.component';
+import { ObservableItemsComponent } from "../../components/observable-items/observable-items.component";
 
 @Component({
     selector: 'app-playground',
     standalone: true,
     templateUrl: './playground.component.html',
     styleUrl: './playground.component.scss',
-    imports: [ExponentialBoosterPipe, CommonModule, FormsModule, ObjectsWithPipesComponent]
+    imports: [ExponentialBoosterPipe, CommonModule, FormsModule, ObjectsWithPipesComponent, ObservableItemsComponent]
 })
 export class PlaygroundComponent {
     toggle = true;
