@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-directives-working',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './directives-working.component.html',
   styleUrl: './directives-working.component.scss'
 })
