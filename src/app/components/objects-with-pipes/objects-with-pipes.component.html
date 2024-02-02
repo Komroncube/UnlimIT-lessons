@@ -9,7 +9,11 @@
 } -->
 
 <!-- pure pipe bilan ishlagandan reference type larda o'zgarish ko'rinmaydi, 
-    har safar yangi massiv berish kerak-->
-@for (item of (heroes.concat()| flyingHeroes); track item.name) {
+    har safar yangi massiv berish kerak
+    juda sekin ishlaydi -->
+<!-- @for (item of (heroes.concat()| flyingHeroes); track item.name) {
+    <div>{{item.name}}</div>
+} -->
+@for (item of (heroes| flyingHeroesImpure); track item.name) {
     <div>{{item.name}}</div>
 }
