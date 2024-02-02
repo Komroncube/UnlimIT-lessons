@@ -1,0 +1,22 @@
+<p>directives-working works!</p>
+@if (isMatn) {
+    <p>Matn</p>
+} @else {
+    <p>Matn emas</p>
+}
+@for (item of items; track $index) {
+    <ng-container>
+        {{item}}
+    </ng-container>
+}
+@switch (isMatn) {
+    @case (true) {
+        <p>Matn</p>
+    }
+    @case (false) {
+        <p>Matn emas</p>
+    }
+    @default {
+        <p>Matn emas</p>
+    }
+}
