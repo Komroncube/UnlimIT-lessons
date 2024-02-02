@@ -1,4 +1,4 @@
-<p>playground works!</p>
+<!-- <p>playground works!</p>
 <h1>Uppercase</h1>
 <p>{{'matN' |uppercase }}</p>
 <h1>Lowercase</h1>
@@ -11,6 +11,18 @@
 <p>{{ today | date}}</p>
 <p>The hero's birthday is {{ birthday | date:"shortDate" }} in the "shortDate" format.</p>
 
+<p>The hero's birthday is <b> {{ birthday | date:format }} </b> in "{{format}}" format.
+    Click the toggle button to change formats.</p>
 <p>The hero's birthday is <b> {{ birthday | date:format | uppercase }} </b> in "{{format}}" format.
-  Click the toggle button to change formats.</p>
+    Click the toggle button to change formats.</p>
 <button type="button" (click)="toggleFormat()">Toggle Format</button>
+<hr>
+<label for="number-input">Number:</label>
+<input type="number" name="number-input" [(ngModel)]="digit" id="number-input">
+<label for="power-input">Power:</label>
+<input type="number" name="power-input" [(ngModel)]="power" id="power-input">
+<p>
+    power with inputs {{digit! | exponentialBooster: power!}}
+</p> -->
+
+<app-objects-with-pipes></app-objects-with-pipes>

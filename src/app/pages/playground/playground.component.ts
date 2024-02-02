@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import { ExponentialBoosterPipe } from "../../pipes/exponential-booster.pipe";
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { ObjectsWithPipesComponent } from '../../components/objects-with-pipes/objects-with-pipes.component';
 
 @Component({
     selector: 'app-playground',
     standalone: true,
     templateUrl: './playground.component.html',
     styleUrl: './playground.component.scss',
-    imports: [ExponentialBoosterPipe, CommonModule]
+    imports: [ExponentialBoosterPipe, CommonModule, FormsModule, ObjectsWithPipesComponent]
 })
 export class PlaygroundComponent {
     toggle = true;
@@ -24,4 +26,7 @@ export class PlaygroundComponent {
     birthday = new Date(2003, 7, 7);
 
     today = new Date();
+
+    digit:number|null|undefined;
+    power:number|null|undefined;
 }
