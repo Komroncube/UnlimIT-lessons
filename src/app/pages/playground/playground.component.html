@@ -9,14 +9,18 @@
 <p>{{20000 | currency: 'USD'}}</p>
 <p>{{20000 | currency: 'EUR'}}</p>
 <p>{{ today | date}}</p>
-<p>The hero's birthday is {{ birthday | date:"shortDate" }} in the "shortDate" format.</p>
+<p>The hero's birthday is {{ birthday | date:"shortDate" }} in the "shortDate" format.</p> -->
 
-<p>The hero's birthday is <b> {{ birthday | date:format }} </b> in "{{format}}" format.
+<!-- <p>The hero's birthday is <b> {{ birthday | date:format }} </b> in "{{format}}" format.
     Click the toggle button to change formats.</p>
 <p>The hero's birthday is <b> {{ birthday | date:format | uppercase }} </b> in "{{format}}" format.
     Click the toggle button to change formats.</p>
 <button type="button" (click)="toggleFormat()">Toggle Format</button>
-<hr>
+
+<h2>{{birthday | date:'dd.MM.YYYY HH:mm'}}</h2>
+<h2>{{today | date:'short'}}</h2>
+<hr> -->
+<!--
 <label for="number-input">Number:</label>
 <input type="number" name="number-input" [(ngModel)]="digit" id="number-input">
 <label for="power-input">Power:</label>
@@ -26,4 +30,6 @@
 </p> -->
 
 <!-- <app-objects-with-pipes></app-objects-with-pipes> -->
-<app-observable-items></app-observable-items>
+<!-- <app-observable-items></app-observable-items> -->
+
+<app-directives-working></app-directives-working>

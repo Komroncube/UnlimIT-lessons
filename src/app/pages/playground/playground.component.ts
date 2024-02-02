@@ -4,13 +4,21 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ObjectsWithPipesComponent } from '../../components/objects-with-pipes/objects-with-pipes.component';
 import { ObservableItemsComponent } from "../../components/observable-items/observable-items.component";
+import { DirectivesWorkingComponent } from '../../components/directives-working/directives-working.component';
 
 @Component({
     selector: 'app-playground',
     standalone: true,
     templateUrl: './playground.component.html',
     styleUrl: './playground.component.scss',
-    imports: [ExponentialBoosterPipe, CommonModule, FormsModule, ObjectsWithPipesComponent, ObservableItemsComponent]
+    imports: [
+        ExponentialBoosterPipe, 
+        CommonModule, 
+        FormsModule, 
+        ObjectsWithPipesComponent, 
+        ObservableItemsComponent,
+        DirectivesWorkingComponent
+    ]
 })
 export class PlaygroundComponent {
     toggle = true;
@@ -28,6 +36,6 @@ export class PlaygroundComponent {
 
     today = new Date();
 
-    digit:number|null|undefined;
-    power:number|null|undefined;
+    digit: number | null | undefined;
+    power: number | null | undefined;
 }
