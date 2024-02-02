@@ -1,0 +1,16 @@
+<p>playground works!</p>
+<h1>Uppercase</h1>
+<p>{{'matN' |uppercase }}</p>
+<h1>Lowercase</h1>
+<p>{{'KichiK' |lowercase }}</p>
+<h2>Exponential</h2>
+<p>{{2 | exponentialBooster: 10 }}</p>
+<h2>Currency</h2>
+<p>{{20000 | currency: 'USD'}}</p>
+<p>{{20000 | currency: 'EUR'}}</p>
+<p>{{ today | date}}</p>
+<p>The hero's birthday is {{ birthday | date:"shortDate" }} in the "shortDate" format.</p>
+
+<p>The hero's birthday is <b> {{ birthday | date:format }} </b> in "{{format}}" format.
+  Click the toggle button to change formats.</p>
+<button type="button" (click)="toggleFormat()">Toggle Format</button>
