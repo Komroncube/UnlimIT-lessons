@@ -34,3 +34,12 @@
         Angular {{i+1}}
     </p>
 </ng-container>
+@for (item of items; track $index;) {
+    @if($index % 2 == 0) {
+        <ng-container style="color: blueviolet;">
+            {{item}}
+        </ng-container>
+    }
+} @empty {
+    <p>Empty</p>
+}
