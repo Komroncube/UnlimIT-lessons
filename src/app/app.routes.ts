@@ -9,6 +9,8 @@ export const routes: Routes = [
     },
     {
         path: '',
-        component: BestPracticesComponent
+        redirectTo: '/playground',
+        pathMatch: 'full'
+        //component: BestPracticesComponent
     }
 ];
