@@ -4,23 +4,15 @@
 } @else {
     <p>Matn emas</p>
 }
+<hr>
+<h2>for loop</h2>
 @for (item of items; track $index) {
     <ng-container>
         {{item}}
     </ng-container>
 }
-@switch (isMatn) {
-    @case (true) {
-        <p>Matn</p>
-    }
-    @case (false) {
-        <p>Matn emas</p>
-    }
-    @default {
-        <p>Matn emas</p>
-    }
-}
-
+<hr>
+<h2>container for combo</h2>
 <ng-container 
     *ngFor="let item of [].constructor(5); let i = index; 
     odd as isOdd
@@ -34,6 +26,7 @@
         Angular {{i+1}}
     </p>
 </ng-container>
+<hr>
 @for (item of items; track $index;) {
     <!-- @if($index % 2 == 0) {
         <ng-container style="color: blueviolet;">
@@ -50,3 +43,24 @@
 } @empty {
     <p>Empty</p>
 }
+
+<hr>
+<h2>Switch case</h2>
+@switch (isMatn) {
+    @case (true) {
+        <p>Matn</p>
+    }
+    @case (false) {
+        <p>Matn emas</p>
+    }
+    @default {
+        <p>Matn emas</p>
+    }
+}
+<hr>
+<h2>Styles</h2>
+<p [style]="stylecss">Angular</p>
+<p [style.color]="'red'">
+    Red text with <code [style.font-size.px]="30" [style.color]="'black'">[style.color]="'red'"</code>
+</p>
+
