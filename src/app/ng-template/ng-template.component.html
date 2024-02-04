@@ -1,0 +1,21 @@
+<div class="card-list">
+    <ng-container 
+        [ngTemplateOutlet]="card"
+        [ngTemplateOutletContext]="{ title: 'Title 1'}"
+    ></ng-container>
+    <ng-container 
+        [ngTemplateOutlet]="card"
+        [ngTemplateOutletContext]="{ gap: 'Title 2'}"
+    ></ng-container>
+    <ng-container 
+        [ngTemplateOutlet]="card"
+        [ngTemplateOutletContext]="{ title: 'Title 3'}">
+    </ng-container>
+</div>
+
+<!-- gap ng-container ichida berish uchun let-*** esa template ichida ishlatiladigan element uchun  -->
+<ng-template #card let-title = 'gap'>
+    <div class="card">
+        <h1>{{title}}</h1>
+    </div>
+</ng-template>
