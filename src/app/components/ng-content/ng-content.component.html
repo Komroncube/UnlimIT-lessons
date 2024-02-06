@@ -1,5 +1,10 @@
 <div class="login">
+    <ng-content select="h1"></ng-content>
+    <ng-content select=".description"></ng-content>
+    <ng-content select="[bob]"></ng-content>
+
     <input type="text" placeholder="Login">
     <input type="password" placeholder="Password">
+    <ng-content></ng-content>
     <button>Login</button>
 </div>
