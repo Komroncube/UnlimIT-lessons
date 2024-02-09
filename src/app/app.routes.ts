@@ -13,7 +13,10 @@ export const routes: Routes = [
         path: '',
         redirectTo: '/playground',
         pathMatch: 'full'
-        //component: BestPracticesComponent
+    },
+    {
+        path: 'best-practices',
+        component: BestPracticesComponent
     },
     {
         path: 'ng-template',
