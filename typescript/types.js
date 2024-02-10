@@ -1,3 +1,4 @@
+var _a;
 var person = {
     firstName: "John",
     lastName: "Doe",
@@ -17,4 +18,23 @@ var Role;
 var admin = Role.Admin;
 console.log(admin); // 4
 console.log(Role[5]);
-console.log(Role['4']);
+// console.log(Role['4']);
+console.log(Role.SuperAdmin);
+var computer = {
+    model: 'HP',
+    color: 'black',
+    price: 1000,
+    memory: 16
+};
+var car = {
+    model: 'Ford',
+    color: 'red',
+    price: 1000,
+    year: 2000,
+    go: function () {
+        console.log('Go');
+    }
+};
+(_a = car.go) === null || _a === void 0 ? void 0 : _a.call(car);
+var car2 = {};
+car2.model = 'Ford';
