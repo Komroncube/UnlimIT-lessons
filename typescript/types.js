@@ -38,3 +38,6 @@ var car = {
 (_a = car.go) === null || _a === void 0 ? void 0 : _a.call(car);
 var car2 = {};
 car2.model = 'Ford';
+var id1 = { id: 5 };
+var id2 = { id: '5' };
+var id3 = { id: true };

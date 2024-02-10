@@ -72,3 +72,10 @@ type CarType = {
 
 let car2 : CarType = {} as CarType;
 car2.model = 'Ford';
+
+interface Id<T = number> {
+    id: T;
+}
+let id1: Id = {id: 5};
+let id2: Id<string> = {id: '5'};
+let id3: Id<boolean> = {id: true};
