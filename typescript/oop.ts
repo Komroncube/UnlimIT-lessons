@@ -1,6 +1,6 @@
 class Animal {
-    name: string;
-    private _legs: number;
+    name!: string;
+    private _legs!: number;
 
     get legs() {
         return this._legs;
