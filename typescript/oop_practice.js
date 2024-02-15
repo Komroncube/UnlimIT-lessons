@@ -63,9 +63,12 @@ var TicoCar = /** @class */ (function (_super) {
 }(AbstractCar));
 //OBJECT
 var ticoCar = new TicoCar(1);
+
 //var ticoCar2 = new TicoCar('2');
 console.log(ticoCar);
 //console.log(ticoCar2);
 // readonly property can't be changed
 // ticoCar.name = "Tico2";
+var ticoCar2 = new TicoCar('2');
+//comment
 ticoCar.start();
