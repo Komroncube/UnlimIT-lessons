@@ -40,3 +40,5 @@ var TicoCar = /** @class */ (function (_super) {
 //OBJECT
 var ticoCar = new TicoCar(1);
 var ticoCar2 = new TicoCar('2');
+//comment
+ticoCar.start();
