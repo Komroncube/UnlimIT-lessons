@@ -37,5 +37,5 @@ class TicoCar<T> extends Car<T> {
 //OBJECT
 var ticoCar = new TicoCar(1);
 var ticoCar2 = new TicoCar('2'); 
-//comment
+
 ticoCar.start();
