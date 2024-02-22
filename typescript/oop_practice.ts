@@ -65,5 +65,5 @@ console.log(ticoCar);
 // readonly property can't be changed
 // ticoCar.name = "Tico2";
 //var ticoCar2 = new TicoCar('2'); 
-//minor changes
+
 ticoCar.start();
