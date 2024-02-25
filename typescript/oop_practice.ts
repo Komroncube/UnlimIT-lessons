@@ -67,4 +67,3 @@ console.log(ticoCar);
 //var ticoCar2 = new TicoCar('2'); 
 
 ticoCar.start();
-//change
